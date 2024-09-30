@@ -18,10 +18,14 @@ def draw_circle():
         turtle.forward(0.3)
         turtle.left(1)
     #draw triangle
-def draw_triangle():
-    for i in range(3):
-        turtle.forward(100)
-        turtle.left(120)
+def draw_ear():
+    turtle.right(60)
+    turtle.pendown()
+    turtle.forward(100)
+    turtle.left(140)
+    turtle.forward(160)
+def draw_eye():
+    print(8)
 #call funnctions
 
 #nose of the dog
@@ -148,6 +152,7 @@ turtle.penup()
 turtle.forward(130)
 turtle.left(10)
 turtle.forward(90)
+#eye number one
 turtle.pendown()
 turtle.left(80)
 turtle.forward(45)
@@ -161,9 +166,44 @@ turtle.left(50)
 turtle.forward(40)
 turtle.left(40)
 turtle.forward(55)
-turtle.right(50)
+turtle.right(45)
+turtle.penup()
+turtle.forward(73)
+#other eye
+turtle.pendown()
+turtle.right(20)
+turtle.forward(45)
+turtle.left(20)
+turtle.forward(40)
+turtle.left(60)
+turtle.forward(40)
+turtle.left(80)
+turtle.forward(40)
+turtle.left(50)
+turtle.forward(40)
+turtle.left(40)
+turtle.forward(55)
+turtle.right(45)
 turtle.penup()
 turtle.forward(50)
+turtle.right(90)
+turtle.forward(172)
+turtle.left(90)
+turtle.forward(65)
+#draw ear left
+draw_ear()
+#draw ear right
+turtle.left(180)
+turtle.forward(160)
+turtle.right(140)
+turtle.forward(100)
+turtle.left(60)
+turtle.forward(150)
+turtle.left(60)
+turtle.pendown()
+turtle.forward(100)
+turtle.right(140)
+turtle.forward(160)
 
 
 turtle.update()
