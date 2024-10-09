@@ -205,6 +205,60 @@ turtle.forward(100)
 turtle.right(140)
 turtle.forward(160)
 
+#draw bubbles and foam blocks
+circle_len = 1 #circle radius can take in values to change the radius into different sized bubbles
+block_len = 25 #block length can take in different values to change how big the foam squares are
+def draw_bubble (circle_len):
+    for i in range(365):
+        turtle.forward(circle_len)
+        turtle.left(1)
+def draw_block (block_len, tilt):
+    turtle.left(tilt)
+    for i in range(4):
+        turtle.forward(block_len)
+        turtle.left(90)
+turtle.penup()
+turtle.forward(100)
+turtle.left(60)
+turtle.forward(100)
+turtle.pendown()
+draw_bubble(1)
+turtle.penup()
+turtle.left(60)
+turtle.forward(200)
+turtle.pendown()
+draw_bubble(0.5)
+turtle.penup()
+turtle.right(100)
+turtle.forward(150)
+turtle.pendown()
+draw_block(100, 90)
+turtle.penup()
+turtle.left(40)
+turtle.forward(200)
+turtle.pendown()
+draw_block(100, 10)
+turtle.penup()
+turtle.left(90)
+turtle.forward(1100)
+#draw a few through changing loop
+turtle.pendown()
+for i in range(3):
+    turtle.pendown()
+    draw_bubble(i)
+    turtle.penup()
+    turtle.left(90)
+    turtle.forward(200)
+for i in range(3):
+    turtle.penup()
+    turtle.forward(50)
+    turtle.right(90)
+    turtle.pendown()
+    draw_block(block_len, 30)
+
+
+
+
 
 turtle.update()
 turtle.exitonclick()
